@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================= APP ================= */
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #222;
+
+  transition: 0.3s;
+}
+
+
+/* ================= DARK MODE ================= */
+
+.app.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: 100%;
+  background: #111827;
+
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: white;
+  font-size: 24px;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #60a5fa;
+}
+
+
+/* Dark mode button */
+
+.theme-button {
+  border: none;
+
+  padding: 9px 15px;
+
+  border-radius: 20px;
+
+  background: white;
+  color: #111827;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.theme-button:hover {
+  transform: scale(1.05);
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 80px 30px;
+}
+
+.section h1 {
+  text-align: center;
+
+  font-size: 36px;
+
+  margin-bottom: 30px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+  min-height: 550px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 48px;
+
+  margin-bottom: 15px;
+}
+
+.about h2 {
+  font-size: 26px;
+
+  color: #2563eb;
+
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 750px;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #555;
+}
+
+
+/* Dark About */
+
+.dark .about h2 {
+  color: #60a5fa;
+}
+
+.dark .about p {
+  color: #d1d5db;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.project-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h2 {
+  color: #2563eb;
+
+  font-size: 22px;
+
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.project-card button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.project-card button:hover {
+  background: #1d4ed8;
+}
+
+
+/* Dark Projects */
+
+.dark .project-card {
+  background: #1f2937;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark .project-card h2 {
+  color: #60a5fa;
+}
+
+.dark .project-card p {
+  color: #d1d5db;
+}
+
+
+/* ================= SKILLS ================= */
+
+#skills {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.skills span {
+  background: #2563eb;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 25px;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  transform: translateY(-3px);
+
+  background: #1d4ed8;
+}
+
+
+/* ================= RESUME ================= */
+
+.resume {
+  text-align: center;
+}
+
+.resume p {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #555;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+.resume a {
+  text-decoration: none;
+}
+
+.resume button {
+  margin-top: 25px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 13px 25px;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.resume button:hover {
+  background: #1d4ed8;
+}
+
+
+/* Dark Resume */
+
+.dark .resume p {
+  color: #d1d5db;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  background: white;
+
+  color: #222;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #2563eb;
+}
+
+.contact textarea {
+  height: 150px;
+
+  resize: none;
+}
+
+.contact button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #1d4ed8;
+}
+
+
+/* Dark Contact */
+
+.dark .contact input,
+.dark .contact textarea {
+  background: #1f2937;
+
+  color: white;
+
+  border-color: #374151;
+}
+
+.dark .contact input::placeholder,
+.dark .contact textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .theme-button {
+    padding: 8px 12px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .about {
+    min-height: 500px;
+  }
+
+  .about h1 {
+    font-size: 35px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .section h1 {
+    font-size: 30px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .skills {
+    gap: 10px;
+  }
+
+  .skills span {
+    padding: 10px 16px;
+
+    font-size: 14px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
